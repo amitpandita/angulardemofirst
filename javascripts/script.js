@@ -9,22 +9,22 @@ cartApp.controller("ItemController",function($scope) {
     $scope.item = itemDetails;
     $scope.items = [
         {
-            name: "XYZ",
-            type: "AAA",
-            qnt: 1,
-            price: 123
+            name: "Sweatshirt",
+            type: "Apparel",
+            qnt: 2,
+            price: 800
         },
         {
-            name: "XYZ",
-            type: "AAA",
-            qnt: 1,
-            price: 123
+            name: "Hat",
+            type: "Apparel",
+            qnt: 5,
+            price: 2000
         },
         {
-            name: "XYZ",
-            type: "AAA",
-            qnt: 1,
-            price: 123
+            name: "Coffee Mugs",
+            type: "Crockery",
+            qnt: 3,
+            price: 240
         }
     ];
     $scope.index = -1;

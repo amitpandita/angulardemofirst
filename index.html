@@ -52,7 +52,7 @@
                     <input type="text" ng-model="item.qnt" value="{{item.qnt}}" />
                 </p>
                 <p>
-                    <label>Price</label>
+                    <label>Price/Item</label>
                     <input type="text" ng-model="item.price" value="{{item.price}}" />
                 </p>
                 <p>
@@ -68,7 +68,7 @@
                         <th>Item Name</th>
                         <th>Item Type</th>
                         <th>Quantity</th>
-                        <th>Price</th>
+                        <th>Total Price</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -78,7 +78,7 @@
                         <td>{{ it.name }}</td>
                         <td>{{ it.type }}</td>
                         <td>{{ it.qnt }}</td>
-                        <td>{{ it.price }}</td>
+                        <td>{{it.qnt*it.price| currency:"Rs. "}}</td> 
                         <td>
                             <a href="javascript:void(0);" ng-click="editItem($index);">edit</a>
                             <a href="javascript:void(0);" ng-click="delItem($index);">del</a>
