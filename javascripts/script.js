@@ -17,7 +17,7 @@ cartApp.controller("ItemController",function($scope) {
         {
             name: "Hat",
             type: "Apparel",
-            qnt: 5,
+            qnt: 4,
             price: 2000
         },
         {
