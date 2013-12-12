@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=640" />
 
     <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/style.css" media="screen"/>
     <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
     <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
     <script src="javascripts/script.js"></script>
     <title>AngularJS Demo</title>
   </head>
@@ -38,22 +39,23 @@
            </a>Item Details
         </h3>
         <div ng-controller="ItemController">
-            <form>
+            <form name="form">
                 <p>
                     <label>Item Name</label>
-                    <input type="text" ng-model="item.name" value="{{item.name}}" />
+                    <input type="text" ng-model="item.name" my-focus="mf1"  value="{{item.name}}"  required="require" />
+
                 </p>
                 <p>
                     <label>Item Type</label>
-                    <input type="text" ng-model="item.type" value="{{item.type}}" />
+                    <input type="text" ng-model="item.type" value="{{item.type}}" required/>
                 </p>
                 <p>
                     <label>Quantity</label>
-                    <input type="text" ng-model="item.qnt" value="{{item.qnt}}" />
+                    <input type="text" ng-model="item.qnt" value="{{item.qnt}}" required/>
                 </p>
                 <p>
                     <label>Price/Item</label>
-                    <input type="text" ng-model="item.price" value="{{item.price}}" />
+                    <input type="text" ng-model="item.price" value="{{item.price}}" required/>
                 </p>
                 <p>
                     <button ng-show="isAdd" ng-click="addItem()">Add Item</button>

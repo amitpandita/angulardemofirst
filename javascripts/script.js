@@ -6,7 +6,15 @@ cartApp.controller("ItemController",function($scope) {
         qnt: "",
         price: ""
     };
-    $scope.item = itemDetails;
+    $scope.deepCopy = function(obj) {
+        return {
+            name: obj.name,
+            type: obj.type,
+            qnt: obj.qnt,
+            price: obj.price
+        };
+    }
+    $scope.item = $scope.deepCopy(itemDetails);
     $scope.items = [
         {
             name: "Sweatshirt",
@@ -46,16 +54,10 @@ cartApp.controller("ItemController",function($scope) {
         $scope.reset();
     };
     $scope.reset = function() {
-        $scope.item = itemDetails;
+        $scope.item = $scope.deepCopy(itemDetails);
         $scope.index = -1;
         $scope.isAdd = true;
+        $scope.form.$setPristine();
+
     };
-    $scope.deepCopy = function(obj) {
-        return {
-            name: obj.name,
-            type: obj.type,
-            qnt: obj.qnt,
-            price: obj.price
-        };
-    }
 });
