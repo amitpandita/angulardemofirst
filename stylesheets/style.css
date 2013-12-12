@@ -5,3 +5,10 @@ background-color: #FA787E;
 form input.ng-valid.ng-dirty {
 background-color: #78FA89;
 }
+
+label.error {
+color: #D8000C;
+font-size: 11px;
+display: inline-block;
+width: auto;
+}

@@ -42,21 +42,37 @@
             <form name="form">
                 <p>
                     <label>Item Name</label>
-                    <input type="text" ng-model="item.name" my-focus="mf1"  value="{{item.name}}"  required="require" />
-
+                    <input type="text" ng-model="item.name" my-focus="mf1" name="iname" value="{{item.name}}"  required="require" />
+                    <label class="error" ng-show="form.iname.$dirty && form.iname.$invalid">
+                       <span ng-show="form.iname.$error.required">Invalid! Tell us the Item Name.</span>
+                    </label> 
                 </p>
+                
+
                 <p>
                     <label>Item Type</label>
-                    <input type="text" ng-model="item.type" value="{{item.type}}" required/>
-                </p>
+                    <input type="text" ng-model="item.type" name="itype" value="{{item.type}}" required/>
+                
+                <label class="error" ng-show="form.itype.$dirty && form.itype.$invalid">
+                       <span ng-show="form.itype.$error.required">Invalid! Tell us the Item Type.</span>
+                    </label> 
+                </p>    
+
                 <p>
                     <label>Quantity</label>
-                    <input type="text" ng-model="item.qnt" value="{{item.qnt}}" required/>
+                    <input type="text" ng-model="item.qnt" name="iqnt" value="{{item.qnt}}" required/>
+                <label class="error"  ng-show="form.iqnt.$dirty && form.iqnt.$invalid">
+                       <span ng-show="form.iqnt.$error.required">Invalid! Tell us the number of items.</span>
+                    </label> 
                 </p>
+                    
                 <p>
                     <label>Price/Item</label>
-                    <input type="text" ng-model="item.price" value="{{item.price}}" required/>
-                </p>
+                    <input type="text" ng-model="item.price" name="iprice" value="{{item.price}}" required/>
+                <label class="error"  ng-show="form.iprice.$dirty && form.iprice.$invalid">
+                       <span ng-show="form.iprice.$error.required">Invalid! Tell us the Price of the Name.</span>
+                    </label> 
+                </p>    
                 <p>
                     <button ng-show="isAdd" ng-click="addItem()">Add Item</button>
                     <button ng-hide="isAdd" ng-click="updateItem()">Update Item</button>
