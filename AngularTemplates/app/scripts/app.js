@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularTemplatesApp', [
+angular.module('angularTemplatesApp', ['ui',
   'ngCookies',
   'ngResource',
   'ngSanitize',

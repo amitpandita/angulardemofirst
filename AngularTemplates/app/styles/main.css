@@ -77,3 +77,8 @@ body {
     border-bottom: 0;
   }
 }
+
+.nav-stacked li{
+    float:none;
+
+}
