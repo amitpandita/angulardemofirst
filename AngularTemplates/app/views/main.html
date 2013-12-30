@@ -1,36 +1,31 @@
-<div class="header">
-  <ul class="nav nav-pills pull-right">
-    <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#">About</a></li>
-    <li><a ng-href="#">Contact</a></li>
-  </ul>
-  <h3 class="text-muted">AngularTemplates</h3>
-</div>
+<div class="body-container">
+       <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+          <table class="bordered-table zebra-striped" ng-controller="SongListCtrl">
+        <thead>
+          <tr>
+            <th>Play</th>
+            <th>Songs</th>
+            <th class="no-left-border"></th>
+            <th>Artists</th>
+            <th>Popularity</th>
+          </tr>
+        </thead>
+        <tbody ui-sortable>
 
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
-</div>
+          <tr ng-repeat="slist in songlist">
+            <td><i class="glyphicon glyphicon-play"></i></td>
+            <td>{{slist.songs}}</td>
+            <td class="no-left-border"><i class="glyphicon glyphicon-heart"></i></td>
+            <td>{{slist.songs}}</td>
+            <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></td>
+          </tr>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+        </tbody>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
-
-<div class="footer">
-  <p>♥ from the Yeoman team</p>
-</div>
+      </table>
+                </div>  <!-- enddiv for class col-md-9 -->
+        </div>
+         </div>
+         </div>

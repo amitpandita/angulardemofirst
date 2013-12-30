@@ -14,7 +14,6 @@
         <!-- build:css({.tmp,app}) styles/main.css -->
         <link rel="stylesheet" href="styles/bootstrap.css">
         <link rel="stylesheet" href="styles/zebratable.css">
-        <link rel="stylesheet" href="styles/zebratable2.css">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="/bower_components/angular-ui/build/angular-ui.css">
         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -36,77 +35,36 @@
 		<div class="navbar navbar-inverse navbar-fixed-top title-top">
             <div class="navbar">
                 <div class="navbar-inner">
-                    <div class="container">
-
-                        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </a>
-
-                        <!-- Be sure to leave the brand out there if you want it shown -->
-                        <a class="brand" href="#">Project name</a>
-
-                        <!-- Everything you want hidden at 940px or less, place within here -->
-                        <div class="nav-collapse collapse">
-                            <!-- .nav, .navbar-search, .navbar-form, etc -->
-                        </div>
-
+                    <div class="logo">
+                      <a class="brand" href="http://angularjs.org">
+                        <img class="logo" src="images/logo.png">
+                      </a>
+                        
+                        
+                    
                     </div>
                 </div>
             </div>
 		</div>
     </header>
     <section>
-       <div class="container ">
-        <div class="row">
-
-        <div class="col-md-3">
-            <ul class="nav nav-tabs nav-stacked">
-                <li><a href="#">Artists</a></li>
-                <li><a href="#">Playlist</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Library</a></li>
+    <nav>
+        <ul class="">
+                <li><a href="#"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;Home</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-record"></i>&nbsp;&nbsp;Browse</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-globe"></i>&nbsp;&nbsp;Discover</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-record"></i>&nbsp;&nbsp;Random</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-heart"></i>&nbsp;&nbsp;MyFavourite</a></li>
             </ul>
-
-        </div>
-
-            <div class="col-md-9">
-          <table class="bordered-table zebra-striped" ng-controller="SongListCtrl">
-        <thead>
-          <tr>
-            <th>Play</th>
-            <th>Songs</th>
-            <th class="no-left-border"></th>
-            <th>Artists</th>
-            <th>Popularity</th>
-          </tr>
-        </thead>
-        <tbody ui-sortable>
-
-          <tr ng-repeat="slist in songlist">
-            <td><i class="fa fa-play"></i></td>
-            <td>{{slist.songs}}</td>
-            <td class="no-left-border"><i class="fa fa-heart"></i></td>
-            <td>{{slist.songs}}</td>
-            <td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></td>
-          </tr>
-
-        </tbody>
-
-      </table>
-                </div>  <!-- enddiv for class col-md-9 -->
-        </div>
-         </div>
+    </nav>
+    
 		<div class="container" ng-view=""></div>
 		
     </section>
     <footer>
-    
+        <span>&copy; Hana 2014</span>
     </footer>
-    <div class="container" ng-view=""></div>
+   
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -149,6 +107,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/services/myService.js"></script>
         <!-- endbuild -->
         <!-- angular-ui.js -->
         <script src="/bower_components/angular-ui/build/angular-ui.js"></script>
