@@ -6,6 +6,9 @@ angular.module('angularTemplatesApp', ['ui',
   'ngSanitize',
   'ngRoute'
 ])
+  .run(function($rootScope){
+    
+})
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

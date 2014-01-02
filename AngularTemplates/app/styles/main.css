@@ -133,3 +133,9 @@ footer span {
 
   float: right;
 }
+
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 600px; 
+    height: 300px;
+}
