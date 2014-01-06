@@ -6,13 +6,17 @@ angular.module('angularTemplatesApp', ['ui',
   'ngSanitize',
   'ngRoute'
 ])
-  .run(function($rootScope){
+  .run(function(){
     
 })
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
+        controller: 'MainCtrl'
+      })
+      .when('/song', {
+        templateUrl: 'views/songlist.html',
         controller: 'MainCtrl'
       })
       .otherwise({

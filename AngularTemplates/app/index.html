@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="styles/zebratable.css">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="/bower_components/angular-ui/build/angular-ui.css">
+        <link rel="stylesheet" type="text/css" href="http://angular-ui.github.com/ng-grid/css/ng-grid.css" />
         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <!-- endbuild -->
 </head>
@@ -55,14 +56,13 @@
     <section>
     <nav>
         <ul class="">
-                <li><a href="#"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;Home</a></li>
+                <li><a href="#song"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;Home</a></li>
                 <li><a href="#"><i class="glyphicon glyphicon-record"></i>&nbsp;&nbsp;Browse</a></li>
                 <li><a href="#"><i class="glyphicon glyphicon-globe"></i>&nbsp;&nbsp;Discover</a></li>
                 <li><a href="#"><i class="glyphicon glyphicon-record"></i>&nbsp;&nbsp;Random</a></li>
                 <li><a href="#"><i class="glyphicon glyphicon-heart"></i>&nbsp;&nbsp;MyFavourite</a></li>
             </ul>
     </nav>
-    
 		<div class="container" ng-view=""></div>
 		
     </section>
@@ -81,48 +81,49 @@
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
     </script>
+    
+
 
     <!--<script src="bower_components/jquery/jquery.js"></script> -->
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    
 
-        <!-- build:js scripts/plugins.js -->
-        <script src="bower_components/sass-bootstrap/js/affix.js"></script>
-        <script src="bower_components/sass-bootstrap/js/alert.js"></script>
-        <script src="bower_components/sass-bootstrap/js/button.js"></script>
-        <script src="bower_components/sass-bootstrap/js/carousel.js"></script>
-        <script src="bower_components/sass-bootstrap/js/transition.js"></script>
-        <script src="bower_components/sass-bootstrap/js/collapse.js"></script>
-        <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
-        <script src="bower_components/sass-bootstrap/js/modal.js"></script>
-        <script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
-        <script src="bower_components/sass-bootstrap/js/tab.js"></script>
-        <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
-        <script src="bower_components/sass-bootstrap/js/popover.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/plugins.js 
+    <script src="bower_components/sass-bootstrap/js/affix.js"></script>
+    <script src="bower_components/sass-bootstrap/js/alert.js"></script>
+    <script src="bower_components/sass-bootstrap/js/button.js"></script>
+    <script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+    <script src="bower_components/sass-bootstrap/js/transition.js"></script>
+    <script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+    <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+    <script src="bower_components/sass-bootstrap/js/modal.js"></script>
+    <script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+    <script src="bower_components/sass-bootstrap/js/tab.js"></script>
+    <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+    <script src="bower_components/sass-bootstrap/js/popover.js"></script>
+     endbuild -->
 
-        <!-- build:js scripts/modules.js -->
-        <script src="bower_components/angular-resource/angular-resource.js"></script>
-        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-        <script src="bower_components/angular-route/angular-route.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/modules.js -->
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/services/myService.js"></script>
-        <!-- endbuild -->
-        <!-- angular-ui.js -->
-        <script src="/bower_components/angular-ui/build/angular-ui.js"></script>
-        <!-- endangular-ui -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    
+    
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <!-- endbuild -->
+    <!-- angular-ui.js -->
+    <script src="/bower_components/angular-ui/build/angular-ui.js"></script>
+    <!-- endangular-ui -->
 
-        <!-- for gridStyle -->
-        <link rel="stylesheet" type="text/css" href="http://angular-ui.github.com/ng-grid/css/ng-grid.css" />
-        <script type="text/javascript" src="http://angular-ui.github.com/ng-grid/lib/ng-grid.debug.js"></script>
-        <!-- endgridStyle -->
-
-
+    <!-- for gridStyle -->
+    <script type="text/javascript" src="http://angular-ui.github.com/ng-grid/lib/ng-grid.debug.js"></script>
+    <!-- endgridStyle -->
 </body>
 </html>
