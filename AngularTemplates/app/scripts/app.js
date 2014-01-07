@@ -4,7 +4,8 @@ angular.module('angularTemplatesApp', ['ui',
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'audioPlayer-directive'
 ])
   .run(function(){
     
@@ -18,6 +19,10 @@ angular.module('angularTemplatesApp', ['ui',
       .when('/song', {
         templateUrl: 'views/songlist.html',
         controller: 'MainCtrl'
+      })
+      .when('/random', {
+        templateUrl: 'views/random.html',
+        controller: 'RandomCtrl'
       })
       .otherwise({
         redirectTo: '/'

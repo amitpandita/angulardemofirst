@@ -13,8 +13,8 @@
 
         <!-- build:css({.tmp,app}) styles/main.css -->
         <link rel="stylesheet" href="styles/bootstrap.css">
-        <link rel="stylesheet" href="styles/zebratable.css">
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/zebratable.css">
         <link rel="stylesheet" href="/bower_components/angular-ui/build/angular-ui.css">
         <link rel="stylesheet" type="text/css" href="http://angular-ui.github.com/ng-grid/css/ng-grid.css" />
         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -59,12 +59,21 @@
                 <li><a href="#song"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;Home</a></li>
                 <li><a href="#"><i class="glyphicon glyphicon-record"></i>&nbsp;&nbsp;Browse</a></li>
                 <li><a href="#"><i class="glyphicon glyphicon-globe"></i>&nbsp;&nbsp;Discover</a></li>
-                <li><a href="#"><i class="glyphicon glyphicon-record"></i>&nbsp;&nbsp;Random</a></li>
+                <li><a href="#random"><i class="glyphicon glyphicon-record"></i>&nbsp;&nbsp;Random</a></li>
                 <li><a href="#"><i class="glyphicon glyphicon-heart"></i>&nbsp;&nbsp;MyFavourite</a></li>
             </ul>
     </nav>
-		<div class="container" ng-view=""></div>
-		
+        <div class="body-container">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+		        <div class="container" ng-view=""> 
+                </div>
+		      </div>
+            </div>
+          </div>
+        </div>  
+
     </section>
     <footer>
         <span>&copy; Hana 2014</span>
@@ -103,13 +112,14 @@
     <script src="bower_components/sass-bootstrap/js/tab.js"></script>
     <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
     <script src="bower_components/sass-bootstrap/js/popover.js"></script>
-     endbuild -->
+     <!-- endbuild -->
 
     <!-- build:js scripts/modules.js -->
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="scripts/controllers/random.js"></script>
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -117,6 +127,7 @@
     
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
+
     <!-- endbuild -->
     <!-- angular-ui.js -->
     <script src="/bower_components/angular-ui/build/angular-ui.js"></script>
