@@ -1,0 +1,17 @@
+[
+    {
+        "title": "MeriMaa",
+        "artist": {"name": "ARIJIT SINGH"},
+        "image": "images/yaarian.jpg",
+        "file": "MeriMaa.mp3" // without location name
+    },
+
+    {
+        "title": "BAARISH",
+        "artist": {"name": "Mohammed Irfan"},
+        "image": "images/yaarian.jpg",
+        "file": "Baarish-Yaariyan.mp3" // without location name
+    }
+
+   
+]

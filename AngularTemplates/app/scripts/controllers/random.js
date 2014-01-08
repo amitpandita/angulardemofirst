@@ -1,18 +1,19 @@
 'use strict';
 
-angular.module('audioPlayer-directive')
-  .controller('RandomCtrl', function ($scope,$http) {
-    $scope.info = [
-        title: 'BAARISH',
-        artist: [{name:'ARIJIT SINGH'}],
-        image: '/images/yaarian.jpg',
-        file: '/audio/Meri Maa.mp3'
-    ];
-  }).directive('audioPlayer', function($rootScope) {
+angular.module('audioPlayer-directive',[])
+  .controller('RandomCtrl', function () {
+    // $scope.info = {
+    //     title: 'BAARISH',
+    //     artist: {name:'ARIJIT SINGH'},
+    //     image: 'images/yaariyan.jpg',
+    //     file: 'audio/MeriMaa.mp3'
+    //   };
+    // $scope.file = 'audio/MeriMaa.mp3';
+}).directive('audioPlayer', function($rootScope) {
         return {
             restrict: 'E',
             scope: {},
-            controller: function($scope, $element) {
+            controller: function($scope) {
                 $scope.audio = new Audio();
                 $scope.currentNum = 0;
 

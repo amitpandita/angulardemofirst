@@ -157,3 +157,19 @@ audio-player * {
     -ms-user-select: none;
     user-select: none;
 }
+
+.albums {
+    margin:0;
+    padding:0;
+}
+
+.albums li {
+    list-style:none;
+    margin:10px;
+    display:inline-block;
+    width: 120px;
+    height: 120px;
+    background-color: #eee;
+    background-size: cover;
+    border: 1px solid #333;
+}

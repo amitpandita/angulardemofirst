@@ -25,12 +25,15 @@
         </tbody>
 
       </table>  
-            <!-- </div>  <!-- enddiv for class col-md-9 
-        </div>
-         </div>
-         </div> -->
-               
-               <!--<div ng-controller="MainCtrl">
-               <div class="gridStyle" ng-grid="gridOptions"></div>
-               </div>  -->
+
+
+      <ul class="albums">
+        <li
+             ng-repeat="item in data | startFrom:currentTrack | limitTo:pageSize"
+             ng-style="{'background-image':'url({{item.image}})'}"
+             title="{{item.artist.name}} - {{item.title}}"
+             data-file="{{item.file}}"
+            >
+        </li>
+      </ul>
 

@@ -1,8 +1,0 @@
-[
-    {
-        "title": "BAARISH",
-        "artist": {"name": "ARIJIT SINGH"},
-        "image": "/images/yaarian.jpg",
-        "file": " /audio/Meri Maa.mp3" // without location name
-    }
-]
