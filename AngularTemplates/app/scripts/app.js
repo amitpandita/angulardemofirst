@@ -4,13 +4,8 @@ angular.module('angularTemplatesApp', ['ui',
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute',
-  'audioPlayer-directive'
-])
-  .run(function(){
-    
-})
-  .config(function ($routeProvider) {
+  'ngRoute'
+]).config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -18,7 +13,7 @@ angular.module('angularTemplatesApp', ['ui',
       })
       .when('/song', {
         templateUrl: 'views/songlist.html',
-        controller: 'MainCtrl'
+        controller: 'SongListCtrl'
       })
       .when('/random', {
         templateUrl: 'views/random.html',
