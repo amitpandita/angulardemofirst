@@ -27,13 +27,5 @@
       </table>  
 
 
-      <ul class="albums">
-        <li
-             ng-repeat="item in data | startFrom:currentTrack | limitTo:pageSize"
-             ng-style="{'background-image':'url({{item.image}})'}"
-             title="{{item.artist.name}} - {{item.title}}"
-             data-file="{{item.file}}"
-            >
-        </li>
-      </ul>
+     
 

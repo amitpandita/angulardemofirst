@@ -5,7 +5,12 @@ angular.module('angularTemplatesApp', ['ui',
   'ngResource',
   'ngSanitize',
   'ngRoute'
-]).config(function ($routeProvider) {
+]).run(function($rootScope, Songs) {
+  if (void 0 == Songs.data || void 0 == Songs.data.songs) {
+    Songs.getSongs();
+  }
+  $rootScope.songs = Songs;
+}).config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',

@@ -1,10 +1,7 @@
 'use strict';
 
 angular.module('angularTemplatesApp')
-  .controller('RandomCtrl', function ($scope, $http, Songs) {
-    Songs.getSongs();
-    $scope.songs = Songs;
-    console.log(Songs);
+  .controller('RandomCtrl', function ($scope) {
   }).directive('musicPlayer', function(){
     return {
       restrict: 'A',

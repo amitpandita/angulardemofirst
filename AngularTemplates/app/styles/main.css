@@ -1,7 +1,10 @@
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -73,12 +76,14 @@ body {
 
 }
 section {
-  position: relative;
-  margin-top: 60px;
+  
 }
 nav {
-  position: absolute;
-  width: 160px
+  position: fixed;
+  width: 160px;
+  top: 60px;
+  bottom: 20px;
+  height: 100%;
 }
 nav ul {
   margin: 0;
@@ -106,7 +111,7 @@ nav ul li a:hover {
   margin: 5px 10px 0px;
 }
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
