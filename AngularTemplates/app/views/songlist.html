@@ -1,15 +1,27 @@
-<div class="body-container">
+<div class="jumbotron">
        <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <ol ng-repeat="s in songs.data.songs">
-                	<li><img ng-src="{{s.image}}"/>
-                         <h2>{{s.album}}</h2>
+        <!-- <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <ul ng-repeat="(k,a) in songs.data.albums">
+                	<li><img ng-src="{{a.image}}"/>
+                         <h4>{{a.name}}</h4>
                 	</li>
-                	
+                </ul>
+             </div> -->
+       
 
 
-                </ol>
-             </div>
-       </div>
+
+
+<div class="row" >
+  <div class="col-xs-6 col-md-3" ng-repeat="(k,a) in songs.data.albums">
+    <div class="thumbnail">
+      <a href="#"><img ng-src="{{a.image}}" alt="..." style="height: 150px; width:150px">
+        {{a.name}}</a>
+    </div>
+  </div>
+</div>
+
+
+</div>
        </div>

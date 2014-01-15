@@ -4,17 +4,17 @@
       <tr>
         <th>Rating</th>
         <th>Title</th>
-        <th>Artist</th>
         <th>Album</th>
+        <th>Artist</th>
         <th>MP3</th>
       </tr>
     </thead>
-    <tbody ui-sortable>
-      <tr ng-repeat="s in songs.data.songs">
+    <tbody  ui-sortable>
+      <tr ng-repeat="(k,s) in songs.data.songs|linear">
         <!--<td><img ng-src="{{s.image}}"/></td>-->
         <td><i class="glyphicon glyphicon-heart"></i></td>
         <td>{{ s.title }}</td>
-        <td>{{ s.album }}</td>
+        <td>{{ s.image }}</td>
         <td>{{ s.artist }}</td>
         <td music-player file-path="s.file"></td>
       </tr>
@@ -23,7 +23,7 @@
 </div>
 
 
-<div ng-show="angularTemplatesApp">
+<!-- <div ng-show="angularTemplatesApp">
 
 <h3>{{songlist.songs}}</h3>>
 
@@ -31,7 +31,7 @@
 
 <ul>
     
-    <li ng-repeat="s in songs.data.songs">
+    <li ng-repeat="(k,s) in songs.data.songs">
         
         {{songlist.songs}} {{songlist.songs}}
     </li>
@@ -49,3 +49,4 @@
              </div>
        </div>
        </div>
+ -->

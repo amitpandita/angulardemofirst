@@ -1,78 +1,88 @@
-[
-    {
-        "title": "MeriMaa",
-        "artist": "ARIJIT SINGH",
-        "image": "images/yaarian.jpg",
-        "file": "MeriMaa.mp3",
-        "album": "Yaarian"
+{
+   "albums":{
+     "1":{
+          "name": "Yaarian",
+          "image": "images/yaarian.jpg"
+ 
+     },
+     "2":{
+           "name": "Gunday",
+          "image": "images/gunday.jpg"
+
+     }
+
     },
+   "songs":{
+        "1":[
+            {
+                "title": "MeriMaa",
+                "artist": "ARIJIT SINGH",
+                "image": "images/yaarian.jpg",
+                "file": "MeriMaa.mp3"
+            },
 
-    {
-        "title": "Baarish",
-        "artist": "Mohammed Irfan",
-        "image": "images/yaarian.jpg",
-        "file": "Baarish-Yaariyan.mp3",
-        "album": "Yaarian"
-    },
+            {
+                "title": "Baarish",
+                "artist": "Mohammed Irfan",
+                "image": "images/yaarian.jpg",
+                "file": "Baarish-Yaariyan.mp3"
+            },
 
-    {
-        "title": "ABCD",
-        "artist": "Benny Dayal",
-        "image": "images/yaarian.jpg",
-        "file": "Abcd.mp3",
-        "album": "Yaarian"
-    },
-
-
-
-    {
-        "title": "Allah Waariyan",
-        "artist": "Shafqat Amanat Ali",
-        "image": "images/yaarian.jpg",
-        "file": "Allah Waariyan.mp3",
-        "album": "Yaarian"
-    },
-
-    {
-        "title": "Baarish-Remix",
-        "artist": "Mohammed Irfan",
-        "image": "images/yaarian.jpg",
-        "file": "Baarish-Remix.mp3",
-        "album": "Yaarian"
-    },
-
-    {
-        "title": "Love Me Thoda Aur",
-        "artist": "Arijit Singh & Monali Thakur",
-        "image": "images/yaarian.jpg",
-        "file": "Love Me Thoda Aur.mp3",
-        "album": "Yaarian"
-    },
-
-    {
-        "title": "Mujhe Ishq Se",
-        "artist": "Gajendra Verma & Tulsi Kumar",
-        "image": "images/yaarian.jpg",
-        "file": "Mujhe Ishq Se.mp3",
-        "album": "Yaarian"
-    },
-
-    {
-        "title": "Gunday",
-        "artist": "Sohail Sen",
-        "image": "images/gunday.jpg",
-        "file": "Gunday.mp3",
-        "album": "Gunday"
-    },
-
-    {
-        "title": "Jiya",
-        "artist": "Arjit Singh",
-        "image": "images/gunday.jpg",
-        "file": "Jiya.mp3",
-        "album": "Gunday"
-    }
+            {
+                "title": "ABCD",
+                "artist": "Benny Dayal",
+                "image": "images/yaarian.jpg",
+                "file": "Abcd.mp3"
+            },
 
 
-   
-]
+
+            {
+                "title": "Allah Waariyan",
+                "artist": "Shafqat Amanat Ali",
+                "image": "images/yaarian.jpg",
+                "file": "Allah Waariyan.mp3"
+            },
+
+            {
+                "title": "Baarish-Remix",
+                "artist": "Mohammed Irfan",
+                "image": "images/yaarian.jpg",
+                "file": "Baarish-Remix.mp3"
+            },
+
+            {
+                "title": "Love Me Thoda Aur",
+                "artist": "Arijit Singh & Monali Thakur",
+                "image": "images/yaarian.jpg",
+                "file": "Love Me Thoda Aur.mp3"
+            },
+
+            {
+                "title": "Mujhe Ishq Se",
+                "artist": "Gajendra Verma & Tulsi Kumar",
+                "image": "images/yaarian.jpg",
+                "file": "Mujhe Ishq Se.mp3"
+            }
+
+        ],
+
+        "2":[
+
+        {
+            "title": "Gunday",
+            "artist": "Sohail Sen",
+            "image": "images/gunday.jpg",
+            "file": "Gunday.mp3"
+        },
+
+        {
+            "title": "Jiya",
+            "artist": "Arjit Singh",
+            "image": "images/gunday.jpg",
+            "file": "Jiya.mp3"
+
+        }
+    ]
+}
+}

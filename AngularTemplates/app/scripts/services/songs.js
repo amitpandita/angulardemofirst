@@ -12,7 +12,8 @@ angular.module('angularTemplatesApp')
     songService.getSongs = function() {
       $http.get('data/songList.json')
             .success(function(data) {
-              songService.data.songs = data;
+              songService.data = data;
+              console.log(songService);
             });
     };
 

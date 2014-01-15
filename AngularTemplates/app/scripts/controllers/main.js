@@ -2,6 +2,6 @@
 
 angular.module('angularTemplatesApp').controller('MainCtrl', function () {
     
-    }).controller('SongListCtrl', function ($scope, Songs) {
+    }).controller('SongListCtrl', function ($scope, Songs,$routeParams) {
     
   });
