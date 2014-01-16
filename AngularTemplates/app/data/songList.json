@@ -7,7 +7,7 @@
      },
      "2":{
            "name": "Gunday",
-          "image": "images/gunday.jpg"
+           "image": "images/gunday.jpg"
 
      }
 
@@ -17,21 +17,18 @@
             {
                 "title": "MeriMaa",
                 "artist": "ARIJIT SINGH",
-                "image": "images/yaarian.jpg",
                 "file": "MeriMaa.mp3"
             },
 
             {
                 "title": "Baarish",
                 "artist": "Mohammed Irfan",
-                "image": "images/yaarian.jpg",
-                "file": "Baarish-Yaariyan.mp3"
+                "file": "Baarish.mp3"
             },
 
             {
                 "title": "ABCD",
                 "artist": "Benny Dayal",
-                "image": "images/yaarian.jpg",
                 "file": "Abcd.mp3"
             },
 
@@ -40,28 +37,24 @@
             {
                 "title": "Allah Waariyan",
                 "artist": "Shafqat Amanat Ali",
-                "image": "images/yaarian.jpg",
                 "file": "Allah Waariyan.mp3"
             },
 
             {
                 "title": "Baarish-Remix",
                 "artist": "Mohammed Irfan",
-                "image": "images/yaarian.jpg",
                 "file": "Baarish-Remix.mp3"
             },
 
             {
                 "title": "Love Me Thoda Aur",
                 "artist": "Arijit Singh & Monali Thakur",
-                "image": "images/yaarian.jpg",
                 "file": "Love Me Thoda Aur.mp3"
             },
 
             {
                 "title": "Mujhe Ishq Se",
                 "artist": "Gajendra Verma & Tulsi Kumar",
-                "image": "images/yaarian.jpg",
                 "file": "Mujhe Ishq Se.mp3"
             }
 
@@ -72,14 +65,12 @@
         {
             "title": "Gunday",
             "artist": "Sohail Sen",
-            "image": "images/gunday.jpg",
             "file": "Gunday.mp3"
         },
 
         {
             "title": "Jiya",
             "artist": "Arjit Singh",
-            "image": "images/gunday.jpg",
             "file": "Jiya.mp3"
 
         }

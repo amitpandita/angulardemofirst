@@ -10,6 +10,12 @@ angular.module('angularTemplatesApp', ['ui',
     Songs.getSongs();
   }
   $rootScope.songs = Songs;
+  $rootScope.playSong = function(song,aid){
+    $rootScope.selectedSong = song;
+    $rootScope.player.src = 'audio/' + song.file;
+    $rootScope.player.play();
+  }
+
 }).config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -21,6 +27,10 @@ angular.module('angularTemplatesApp', ['ui',
         controller: 'SongListCtrl'
       })
       .when('/random', {
+        templateUrl: 'views/random.html',
+        controller: 'RandomCtrl'
+      })
+      .when('/random/:aid', {
         templateUrl: 'views/random.html',
         controller: 'RandomCtrl'
       })

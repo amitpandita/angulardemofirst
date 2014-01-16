@@ -1,12 +1,20 @@
 'use strict';
 
 angular.module('angularTemplatesApp')
-  .controller('RandomCtrl', function ($scope) {
-  }).directive('musicPlayer', function(){
+  .controller('RandomCtrl', function ($scope, $routeParams, Songs) {
+    if (void 0 != $routeParams.aid) {
+      $scope.albumSongs = {};
+      $scope.albumSongs[$routeParams.aid] = Songs.data.songs[$routeParams.aid];
+    }
+    else {
+      $scope.albumSongs = Songs.data.songs;
+    }
+  }).directive('musicPlayer', function($rootScope){
     return {
       restrict: 'A',
       link: function(scope, elem, attrs) {
-        scope.file = 'audio/' + scope.filePath;
+        //scope.file = 'audio/' + $rootScope.selectedSong;
+        $rootScope.player = elem.find("audio")[0];
       },
       scope: {
         filePath: '='

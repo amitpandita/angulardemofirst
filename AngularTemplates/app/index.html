@@ -75,8 +75,30 @@
         </div>  
 
     </section>
+    
     <footer>
-        <span>&copy; Hana 2014</span>
+        <article ng-show="selectedSong" class="player">
+           <div class="player-image">
+                <img ng-src="{{selectedSong.image}}"/>
+           </div>
+           <div>   
+                <a href="">
+                    <span class="player-stitle">
+                          {{selectedSong.title}}
+                    </span>    
+                </a href="">    
+                    <span class="player-stitle">
+                          {{aid.name}}
+                    </span>    
+                </a>
+                
+                <div music-player>
+                </div>
+            </div>
+
+           
+        </article>
+        <span style="float:right;">&copy; Hana 2014</span>
     </footer>
    
 

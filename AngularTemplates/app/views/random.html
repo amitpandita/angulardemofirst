@@ -2,21 +2,21 @@
   <table class="bordered-table zebra-striped">
     <thead>
       <tr>
-        <th>Rating</th>
+        <th>Play</th>
         <th>Title</th>
         <th>Album</th>
         <th>Artist</th>
-        <th>MP3</th>
+        <th>Rating</th>
       </tr>
     </thead>
     <tbody  ui-sortable>
-      <tr ng-repeat="(k,s) in songs.data.songs|linear">
+      <tr ng-repeat="(k,s) in albumSongs|linear">
         <!--<td><img ng-src="{{s.image}}"/></td>-->
-        <td><i class="glyphicon glyphicon-heart"></i></td>
+        <td> <a href="#" ng-click="playSong(s,k); $event.preventDefault();"><i class="glyphicon glyphicon-play"></i></a></td>
         <td>{{ s.title }}</td>
         <td>{{ s.image }}</td>
         <td>{{ s.artist }}</td>
-        <td music-player file-path="s.file"></td>
+        <td><i class="glyphicon glyphicon-heart"></i></td>        
       </tr>
     </tbody>
   </table>
