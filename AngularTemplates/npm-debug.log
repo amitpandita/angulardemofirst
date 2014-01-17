@@ -1,0 +1,225 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-karma',
+1 verbose cli   'karma-ng-html2js-preprocessor',
+1 verbose cli   'karma-ng-scenario',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.3.21
+3 info using node@v0.10.24
+4 warn package.json angulartemplates@0.0.0 No description
+5 warn package.json angulartemplates@0.0.0 No repository field.
+6 warn package.json angulartemplates@0.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'grunt-karma', null ]
+9 verbose cache add name=undefined spec="grunt-karma" args=["grunt-karma",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'grunt-karma',
+10 verbose parsed url   path: 'grunt-karma',
+10 verbose parsed url   href: 'grunt-karma' }
+11 verbose cache add [ 'karma-ng-html2js-preprocessor', null ]
+12 verbose cache add name=undefined spec="karma-ng-html2js-preprocessor" args=["karma-ng-html2js-preprocessor",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'karma-ng-html2js-preprocessor',
+13 verbose parsed url   path: 'karma-ng-html2js-preprocessor',
+13 verbose parsed url   href: 'karma-ng-html2js-preprocessor' }
+14 verbose cache add [ 'karma-ng-scenario', null ]
+15 verbose cache add name=undefined spec="karma-ng-scenario" args=["karma-ng-scenario",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'karma-ng-scenario',
+16 verbose parsed url   path: 'karma-ng-scenario',
+16 verbose parsed url   href: 'karma-ng-scenario' }
+17 silly lockFile 707ccff9-grunt-karma grunt-karma
+18 verbose lock grunt-karma /home/amit/.npm/707ccff9-grunt-karma.lock
+19 silly lockFile 18de6d31-karma-ng-html2js-preprocessor karma-ng-html2js-preprocessor
+20 verbose lock karma-ng-html2js-preprocessor /home/amit/.npm/18de6d31-karma-ng-html2js-preprocessor.lock
+21 silly lockFile e5bca250-karma-ng-scenario karma-ng-scenario
+22 verbose lock karma-ng-scenario /home/amit/.npm/e5bca250-karma-ng-scenario.lock
+23 silly lockFile 707ccff9-grunt-karma grunt-karma
+24 silly lockFile 707ccff9-grunt-karma grunt-karma
+25 silly lockFile 18de6d31-karma-ng-html2js-preprocessor karma-ng-html2js-preprocessor
+26 silly lockFile 18de6d31-karma-ng-html2js-preprocessor karma-ng-html2js-preprocessor
+27 verbose addNamed [ 'grunt-karma', '' ]
+28 verbose addNamed [ null, '*' ]
+29 silly lockFile 94531edb-grunt-karma grunt-karma@
+30 verbose lock grunt-karma@ /home/amit/.npm/94531edb-grunt-karma.lock
+31 verbose addNamed [ 'karma-ng-html2js-preprocessor', '' ]
+32 verbose addNamed [ null, '*' ]
+33 silly lockFile 9f59274a-karma-ng-html2js-preprocessor karma-ng-html2js-preprocessor@
+34 verbose lock karma-ng-html2js-preprocessor@ /home/amit/.npm/9f59274a-karma-ng-html2js-preprocessor.lock
+35 silly lockFile e5bca250-karma-ng-scenario karma-ng-scenario
+36 silly lockFile e5bca250-karma-ng-scenario karma-ng-scenario
+37 silly addNameRange { name: 'grunt-karma', range: '*', hasData: false }
+38 verbose addNamed [ 'karma-ng-scenario', '' ]
+39 verbose addNamed [ null, '*' ]
+40 silly lockFile 4f100e2f-karma-ng-scenario karma-ng-scenario@
+41 verbose lock karma-ng-scenario@ /home/amit/.npm/4f100e2f-karma-ng-scenario.lock
+42 silly addNameRange { name: 'karma-ng-html2js-preprocessor',
+42 silly addNameRange   range: '*',
+42 silly addNameRange   hasData: false }
+43 silly addNameRange { name: 'karma-ng-scenario', range: '*', hasData: false }
+44 verbose url raw karma-ng-html2js-preprocessor
+45 verbose url resolving [ 'https://registry.npmjs.org/',
+45 verbose url resolving   './karma-ng-html2js-preprocessor' ]
+46 verbose url resolved https://registry.npmjs.org/karma-ng-html2js-preprocessor
+47 info trying registry request attempt 1 at 12:00:19
+48 http GET https://registry.npmjs.org/karma-ng-html2js-preprocessor
+49 verbose url raw karma-ng-scenario
+50 verbose url resolving [ 'https://registry.npmjs.org/', './karma-ng-scenario' ]
+51 verbose url resolved https://registry.npmjs.org/karma-ng-scenario
+52 info trying registry request attempt 1 at 12:00:20
+53 http GET https://registry.npmjs.org/karma-ng-scenario
+54 verbose url raw grunt-karma
+55 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-karma' ]
+56 verbose url resolved https://registry.npmjs.org/grunt-karma
+57 info trying registry request attempt 1 at 12:00:20
+58 verbose etag "4IDSNH94K9D5W04PZT3ZUI688"
+59 http GET https://registry.npmjs.org/grunt-karma
+60 http 304 https://registry.npmjs.org/grunt-karma
+61 silly registry.get cb [ 304,
+61 silly registry.get   { date: 'Fri, 27 Dec 2013 06:30:24 GMT',
+61 silly registry.get     server: 'Apache',
+61 silly registry.get     connection: 'Keep-Alive',
+61 silly registry.get     'keep-alive': 'timeout=10, max=50',
+61 silly registry.get     etag: '"4IDSNH94K9D5W04PZT3ZUI688"',
+61 silly registry.get     vary: 'Accept' } ]
+62 verbose etag grunt-karma from cache
+63 silly addNameRange number 2 { name: 'grunt-karma', range: '*', hasData: true }
+64 silly addNameRange versions [ 'grunt-karma',
+64 silly addNameRange   [ '0.3.0',
+64 silly addNameRange     '0.4.0',
+64 silly addNameRange     '0.4.1',
+64 silly addNameRange     '0.4.2',
+64 silly addNameRange     '0.4.3',
+64 silly addNameRange     '0.4.4',
+64 silly addNameRange     '0.5.0',
+64 silly addNameRange     '0.4.5',
+64 silly addNameRange     '0.5.1',
+64 silly addNameRange     '0.5.2',
+64 silly addNameRange     '0.4.6',
+64 silly addNameRange     '0.5.3',
+64 silly addNameRange     '0.5.4',
+64 silly addNameRange     '0.6.0',
+64 silly addNameRange     '0.6.1',
+64 silly addNameRange     '0.7.0',
+64 silly addNameRange     '0.6.2',
+64 silly addNameRange     '0.7.1',
+64 silly addNameRange     '0.7.2' ] ]
+65 verbose addNamed [ 'grunt-karma', '0.6.2' ]
+66 verbose addNamed [ '0.6.2', '0.6.2' ]
+67 silly lockFile 5237908c-grunt-karma-0-6-2 grunt-karma@0.6.2
+68 verbose lock grunt-karma@0.6.2 /home/amit/.npm/5237908c-grunt-karma-0-6-2.lock
+69 http 200 https://registry.npmjs.org/karma-ng-scenario
+70 silly registry.get cb [ 200,
+70 silly registry.get   { date: 'Fri, 27 Dec 2013 06:30:25 GMT',
+70 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R15B03)',
+70 silly registry.get     etag: '"4048I3GJG6E4C4QASURGJA4FQ"',
+70 silly registry.get     'content-type': 'application/json',
+70 silly registry.get     'content-length': '5949',
+70 silly registry.get     'accept-ranges': 'bytes',
+70 silly registry.get     via: '1.1 varnish',
+70 silly registry.get     age: '13392',
+70 silly registry.get     'x-served-by': 'cache-sv94-SJC3',
+70 silly registry.get     'x-cache': 'MISS',
+70 silly registry.get     'x-cache-hits': '0',
+70 silly registry.get     'x-timer': 'S1388125824.979578257,VS0,VE49',
+70 silly registry.get     vary: 'Accept',
+70 silly registry.get     'keep-alive': 'timeout=10, max=50',
+70 silly registry.get     connection: 'Keep-Alive' } ]
+71 http 200 https://registry.npmjs.org/karma-ng-html2js-preprocessor
+72 silly registry.get cb [ 200,
+72 silly registry.get   { date: 'Fri, 27 Dec 2013 06:30:24 GMT',
+72 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R15B03)',
+72 silly registry.get     etag: '"7TTFPL81JAUZYFHBI14YF0MGG"',
+72 silly registry.get     'content-type': 'application/json',
+72 silly registry.get     'content-length': '16412',
+72 silly registry.get     'accept-ranges': 'bytes',
+72 silly registry.get     via: '1.1 varnish',
+72 silly registry.get     age: '26016',
+72 silly registry.get     'x-served-by': 'cache-sv61-SJC3',
+72 silly registry.get     'x-cache': 'MISS',
+72 silly registry.get     'x-cache-hits': '0',
+72 silly registry.get     'x-timer': 'S1388125824.515021086,VS0,VE58',
+72 silly registry.get     vary: 'Accept',
+72 silly registry.get     'keep-alive': 'timeout=10, max=50',
+72 silly registry.get     connection: 'Keep-Alive' } ]
+73 silly addNameRange number 2 { name: 'karma-ng-scenario', range: '*', hasData: true }
+74 silly addNameRange versions [ 'karma-ng-scenario', [ '0.0.1', '0.0.2', '0.1.0' ] ]
+75 verbose addNamed [ 'karma-ng-scenario', '0.1.0' ]
+76 verbose addNamed [ '0.1.0', '0.1.0' ]
+77 silly lockFile f90b10d8-karma-ng-scenario-0-1-0 karma-ng-scenario@0.1.0
+78 verbose lock karma-ng-scenario@0.1.0 /home/amit/.npm/f90b10d8-karma-ng-scenario-0-1-0.lock
+79 silly addNameRange number 2 { name: 'karma-ng-html2js-preprocessor',
+79 silly addNameRange   range: '*',
+79 silly addNameRange   hasData: true }
+80 silly addNameRange versions [ 'karma-ng-html2js-preprocessor',
+80 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.0.4', '0.1.0' ] ]
+81 verbose addNamed [ 'karma-ng-html2js-preprocessor', '0.1.0' ]
+82 verbose addNamed [ '0.1.0', '0.1.0' ]
+83 silly lockFile b1e18fdd-ma-ng-html2js-preprocessor-0-1-0 karma-ng-html2js-preprocessor@0.1.0
+84 verbose lock karma-ng-html2js-preprocessor@0.1.0 /home/amit/.npm/b1e18fdd-ma-ng-html2js-preprocessor-0-1-0.lock
+85 silly lockFile 3f9f6fd9-ario-karma-ng-scenario-0-1-0-tgz https://registry.npmjs.org/karma-ng-scenario/-/karma-ng-scenario-0.1.0.tgz
+86 verbose lock https://registry.npmjs.org/karma-ng-scenario/-/karma-ng-scenario-0.1.0.tgz /home/amit/.npm/3f9f6fd9-ario-karma-ng-scenario-0-1-0-tgz.lock
+87 silly lockFile dcc56787-g-html2js-preprocessor-0-1-0-tgz https://registry.npmjs.org/karma-ng-html2js-preprocessor/-/karma-ng-html2js-preprocessor-0.1.0.tgz
+88 verbose lock https://registry.npmjs.org/karma-ng-html2js-preprocessor/-/karma-ng-html2js-preprocessor-0.1.0.tgz /home/amit/.npm/dcc56787-g-html2js-preprocessor-0-1-0-tgz.lock
+89 verbose addRemoteTarball [ 'https://registry.npmjs.org/karma-ng-scenario/-/karma-ng-scenario-0.1.0.tgz',
+89 verbose addRemoteTarball   '0d7c8f1348597252178aab450866507f384d08a3' ]
+90 verbose addRemoteTarball [ 'https://registry.npmjs.org/karma-ng-html2js-preprocessor/-/karma-ng-html2js-preprocessor-0.1.0.tgz',
+90 verbose addRemoteTarball   '80c52f533108359b13963337430da3843b626706' ]
+91 silly lockFile 5237908c-grunt-karma-0-6-2 grunt-karma@0.6.2
+92 silly lockFile 5237908c-grunt-karma-0-6-2 grunt-karma@0.6.2
+93 silly lockFile 94531edb-grunt-karma grunt-karma@
+94 silly lockFile 94531edb-grunt-karma grunt-karma@
+95 silly lockFile 3f9f6fd9-ario-karma-ng-scenario-0-1-0-tgz https://registry.npmjs.org/karma-ng-scenario/-/karma-ng-scenario-0.1.0.tgz
+96 silly lockFile 3f9f6fd9-ario-karma-ng-scenario-0-1-0-tgz https://registry.npmjs.org/karma-ng-scenario/-/karma-ng-scenario-0.1.0.tgz
+97 silly lockFile dcc56787-g-html2js-preprocessor-0-1-0-tgz https://registry.npmjs.org/karma-ng-html2js-preprocessor/-/karma-ng-html2js-preprocessor-0.1.0.tgz
+98 silly lockFile dcc56787-g-html2js-preprocessor-0-1-0-tgz https://registry.npmjs.org/karma-ng-html2js-preprocessor/-/karma-ng-html2js-preprocessor-0.1.0.tgz
+99 silly lockFile f90b10d8-karma-ng-scenario-0-1-0 karma-ng-scenario@0.1.0
+100 silly lockFile f90b10d8-karma-ng-scenario-0-1-0 karma-ng-scenario@0.1.0
+101 silly lockFile b1e18fdd-ma-ng-html2js-preprocessor-0-1-0 karma-ng-html2js-preprocessor@0.1.0
+102 silly lockFile b1e18fdd-ma-ng-html2js-preprocessor-0-1-0 karma-ng-html2js-preprocessor@0.1.0
+103 silly lockFile 4f100e2f-karma-ng-scenario karma-ng-scenario@
+104 silly lockFile 4f100e2f-karma-ng-scenario karma-ng-scenario@
+105 silly lockFile 9f59274a-karma-ng-html2js-preprocessor karma-ng-html2js-preprocessor@
+106 silly lockFile 9f59274a-karma-ng-html2js-preprocessor karma-ng-html2js-preprocessor@
+107 error Error: EACCES, mkdir '/home/amit/tmp/npm-18823-9qPE6zcz'
+107 error  { [Error: EACCES, mkdir '/home/amit/tmp/npm-18823-9qPE6zcz']
+107 error   errno: 3,
+107 error   code: 'EACCES',
+107 error   path: '/home/amit/tmp/npm-18823-9qPE6zcz' }
+108 error Please try running this command again as root/Administrator.
+109 error System Linux 3.11.0-14-generic
+110 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "grunt-karma" "karma-ng-html2js-preprocessor" "karma-ng-scenario" "--save-dev"
+111 error cwd /home/amit/angulardemofirst/AngularTemplates
+112 error node -v v0.10.24
+113 error npm -v 1.3.21
+114 error path /home/amit/tmp/npm-18823-9qPE6zcz
+115 error code EACCES
+116 error errno 3
+117 error stack Error: EACCES, mkdir '/home/amit/tmp/npm-18823-9qPE6zcz'
+118 verbose exit [ 3, true ]
