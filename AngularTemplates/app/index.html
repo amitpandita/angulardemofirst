@@ -73,28 +73,29 @@
             </div>
           </div>
         </div>  
-
     </section>
     
     <footer>
         <article ng-show="selectedSong" class="player">
            <div class="player-image">
-                <img ng-src="{{selectedSong.image}}"/>
+              <a href="{{"selectedSong.album.name"}}>
+                <img src="{{selectedSong.album.image}}"/>
+              </a>  
            </div>
            <div>   
                 <a href="">
                     <span class="player-stitle">
                           {{selectedSong.title}}
                     </span>    
-                <!-- </a href="">    
+                </a href="">    
                     <span class="player-stitle">
-                          {{aid.name}}
+                          {{selectedSong.album.name}}
                     </span>    
-                </a> -->
-                
+                </a>
+            </div>
                 <div music-player>
                 </div>
-            </div>
+            
 
            
         </article>

@@ -12,7 +12,10 @@ angular.module('angularTemplatesApp', ['ui',
   $rootScope.songs = Songs;
   $rootScope.playSong = function(song,aid){
     $rootScope.selectedSong = song;
-    $rootScope.player.src = 'audio/' + song.file;
+   // console.log(aid);
+    $rootScope.selectedSong.album = Songs.data.albums[aid];
+    //$rootScope.player.src = 'audio/' + song.file;
+    $rootScope.player.src = song.file;
     $rootScope.player.play();
   }
 

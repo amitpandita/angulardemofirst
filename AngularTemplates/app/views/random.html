@@ -12,7 +12,7 @@
     <tbody  ui-sortable>
       <tr ng-repeat="(k,s) in albumSongs|linear">
         <!--<td><img ng-src="{{s.image}}"/></td>-->
-        <td> <a href="#" ng-click="playSong(s,k); $event.preventDefault();"><i class="glyphicon glyphicon-play"></i></a></td>
+        <td> <a href="#" ng-click="playSong(s,s.id); $event.preventDefault();"><i class="glyphicon glyphicon-play"></i></a></td>
         <td>{{ s.title }}</td>
         <td>{{ s.image }}</td>
         <td>{{ s.artist }}</td>

@@ -30,6 +30,7 @@ angular.module('angularTemplatesApp')
     for(var key in value) {
       for(var i=0, ln = value[key].length; i < ln; i++ ) {
         result[key+'_'+i] = value[key][i];
+        result[key+'_'+i]["id"] = key;
       }      
     }
     return result;
