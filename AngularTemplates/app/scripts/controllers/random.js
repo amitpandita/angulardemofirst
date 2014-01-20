@@ -2,7 +2,7 @@
 
 angular.module('angularTemplatesApp')
   .controller('RandomCtrl', function ($scope, $routeParams, Songs) {
-    if (void 0 != $routeParams.aid) {
+    if (void 0 !== $routeParams.aid) {
       $scope.albumSongs = {};
       $scope.albumSongs[$routeParams.aid] = Songs.data.songs[$routeParams.aid];
     }
@@ -12,9 +12,9 @@ angular.module('angularTemplatesApp')
   }).directive('musicPlayer', function($rootScope){
     return {
       restrict: 'A',
-      link: function(scope, elem, attrs) {
+      link: function(scope, elem) {
         //scope.file = 'audio/' + $rootScope.selectedSong;
-        $rootScope.player = elem.find("audio")[0];
+        $rootScope.player = elem.find('audio')[0];
       },
       scope: {
         filePath: '='
@@ -30,8 +30,8 @@ angular.module('angularTemplatesApp')
     for(var key in value) {
       for(var i=0, ln = value[key].length; i < ln; i++ ) {
         result[key+'_'+i] = value[key][i];
-        result[key+'_'+i]["id"] = key;
-      }      
+        result[key+'_'+i]['id'] = key;
+      }    
     }
     return result;
   };
